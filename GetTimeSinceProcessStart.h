@@ -171,7 +171,7 @@ double GetTimeSinceProcessStart()
         fclose(file);
         if (decoded != 1)
         {
-            GTSPS_LOG_ERROR("Error: Failed decodong /proc/self/stat.\n");
+            GTSPS_LOG_ERROR("Error: Failed decoding /proc/self/stat.\n");
             return 0.0;
         }
 
@@ -197,7 +197,7 @@ double GetTimeSinceProcessStart()
         fclose(file);
         if (decoded != 1)
         {
-            GTSPS_LOG_ERROR("Error: Failed decodong /proc/uptime.\n");
+            GTSPS_LOG_ERROR("Error: Failed decoding /proc/uptime.\n");
             return 0.0;
         }
     }
